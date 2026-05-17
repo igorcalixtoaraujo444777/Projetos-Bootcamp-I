@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="home">
+        <h1> HOPE <br> Marketing </h1>
+        <p> Na Hope, transformamos expectativas em realidade e idéias em sucesso. </p>
+    </div>
+
+    <div id="about-us"></div>
+
+    <div id="reasons"></div>
+
+    <div id="our-clients"></div>
+
+    <div id="our-names"></div>
+
+    <div id="contact-us"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
