@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reservado Produções </title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <div id="current-prod">
+        <header id="header">
+            <img src="imgs/reservado logo upscale.png" width="60px" style="margin: 10px;"/>
+
+            <div id="links">
+                <a href="#current-prod"> Home </a>
+                <a href="#about-us"> Sobre nós </a>
+                <a href="#prox-prod"> Nossas Produções </a>
+                <a href="#contact-us"> Contato </a>
+                <button onclick='clickHamburguer()' id='hamb-btn'> <i class="bi bi-list" id='hamb-icon'></i> </button>
+            </div>
+
+            
+            <div id="hamb-bar">
+                <a href="#current-prod" onclick='hideHB()'> home </a>
+                <a href="#about-us" onclick='hideHB()'> Sobre nós </a>
+
+
+                <div id="line"></div>
+
+                <a href="https://wa.me/556186520000"> suporte </a>
+                <a href="meia entrada/index.html"> meia-entrada </a>
+
+                <button onclick='window.open("https://www.instagram.com/zettawebdev")' id="Mzetta-logo-btn"></button>
+            </div>
+
+            <div id="out-click-detect" onclick="hideHB()"></div>
+        </header>
+
+        <button onclick="" id="ticket-btn"> Adquirir ingresso <i class="bi bi-chevron-right"></i> </button>
+    </div>
+
+    <div id="about-us">
+        <h1 id="au-title"> Sobre nós</h1>
+        <div class="gradient"></div>
+    
+        <div id="au-body">
+            <!-- Somos uma produtora criada em 2023 com a intenção de fazer shows que nunca tiveram aqui em Brasília.  -->
+            <!-- Já trouxemos nomes como Stevie B, Nyasa, Trinere, Samuel, Peter Container, entre outros.  -->
+
+            <div id="au-text1"> Descubra a magia dos eventos com a <strong> Reservado Produções e Eventos </strong>, a produtora que chegou para transformar suas celebrações em experiências inesquecíveis. Desde 2020, criamos shows e eventos que cativam, emocionam e marcam momentos únicos. </div>
+            <div class="rmv-border" id="au-vid1"> <video src='imgs/vid reserv 1 pronto.mp4' id='vid1' autoplay loop controls muted></video> </div>
+            <div class="rmv-border" id="au-vid2"> <video src='imgs/vid reserv 2 pronto.mp4' id='vid2' autoplay loop controls muted></video> </div>
+            <div id="au-text2"> Em nossos grandes eventos, já trouxemos nomes exclusivos como <strong> Stevie B, Nyasia, Trinere, Samuel, Peter Fontaine, Joey Restivo (ex-linear), Mc Bob Rum </strong>, entre outros. </div>
+        </div>
+        <div class="gradient" id="au-grad2"></div>
+    </div>
+
+    <div id="prox-prod">
+        <h1> Nossas produções</h1>
+        <button id="ppleft-arrow" class="pp-arrows"> <i class="bi bi-chevron-compact-left"></i> </button>
+        <img src="imgs/baile dos sonhos upscale.png" class="prod">
+        <button id="ppright-arrow" class='pp-arrows'> <i class="bi bi-chevron-compact-right"></i> </button>
+
+        <button class="pp-flyer-bar" id='pp-fb1'>
+
+    </div>
+
+    <div id="contact-us">
+        <div class="gradient" id="cu-grad"></div>
+
+        <h1 id="cu-title"> Contacte-nos </h1>
+
+        <div id="cu-social-medias">
+            <div class="btn-bg">
+                <button class="sm-button" id="insta-btn" onclick="window.open('https://www.instagram.com/reservadoproducoesbsb?igsh=N2RqMGc5NGw3Nzl0')">
+                    <i class="bi bi-instagram"></i>
+                </button>
+            </div>
+
+            <div class="btn-bg">
+                <button class="sm-button" id="facebook-btn" onclick="window.open('https://www.facebook.com/reservadoproducoes')">
+                    <i class="bi bi-facebook"></i>
+                </button>
+            </div>
+
+            <div class="btn-bg">
+                <button class="sm-button" id="whatsapp-btn" onclick="window.open('https://wa.me/556186520000')">
+                    <i class="bi bi-whatsapp"></i>
+                </button>
+            </div>
+
+            <div class="btn-bg">
+                <button class="sm-button" id="youtube-btn" onclick="window.open('https://youtube.com/@reservadoproducoesbsb?feature=shared')">
+                    <i class="bi bi-youtube"></i>
+                </button>
+            </div>
+
+            <div class="btn-bg" href="mailto:reservadoproducoeseventos@gmail.com">
+                <button class="sm-button" id="gmail-btn" onclick="window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=reservadoproducoeseventos@gmail.com'">
+                    <img src="imgs/gmail logo.png" id="gmail-logo"/>
+                    <i class="bi bi-envelope"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="cu-help">
+            <button id="cu-btn1" onclick="showCuHelp(1)"> <span id="cu-btn1-txt"> ajuda </span> <i class="bi bi-chevron-down" id="down-arrow"></i> <i class="bi bi-chevron-up" id="up-arrow"></i></button>
+            <div id="cu-btn1-links">
+                <a href="https://wa.me/556186520000"> suporte </a>
+                <a href="meia entrada/index.html"> meia-entrada </a>
+            </div>
+
+            <img src="imgs/reservado logo 2 upscale.png" id='cu-logo'>
+
+            <button onclick='window.open("https://www.instagram.com/zettawebdev")' id="zetta-logo-btn">
+                <img id='zetta-logo' src="imgs/zetta green logo name.svg" width="50px">
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 

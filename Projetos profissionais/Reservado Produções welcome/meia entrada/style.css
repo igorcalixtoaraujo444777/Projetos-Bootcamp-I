@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+    color: white;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    overflow: hidden;
+}
+
+body *{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Lexend Mega', arial;
+    font-weight: 200;
+    text-align: center;
+
+
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: black;
+
+    padding: 32px;
+
+    position: relative;
+    z-index: 1;
+}
+
+#grad-container{
+    width: calc(100% + 40px);
+    height: 50px;
+
+    position: absolute;
+
+    top: 0px;
+    left: -40px;
+
+    padding: 42px 0px;
+    overflow: hidden;
+}
+
+.gradient{
+    width: calc(100% + 80px);
+    height: 50px;
+
+    position: absolute;
+
+    z-index: 0;
+    background: linear-gradient(90deg, #048dd6, #d119c2);
+    filter: blur(30px);
+}
+
+
+
+#text-body{
+    font-family: 'Montserrat', arial;
+
+    margin: 64px;
+    padding: 32px;
+
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 32px;
+
+    line-height: 30px;
+}
+
+#h-requirements{
+    font-family: 'Lexend Mega', arial;
+    font-weight: 200;
+
+    border: none;
+    border-bottom: 1px solid rgb(70, 70, 70);
+
+    width: 50%;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+li{
+    margin-left: 16px;
+}
+
+
+
+
+@media (max-width: 450px){
+    h1{
+        padding: 22px;
+    }
+
+    #text-body{
+        margin: 64px 16px 16px 16px;
+    }
+}
+
+@media (max-width: 350px){
+    h1{
+        font-size: 28px;
+    }
+
+    li{
+        font-size: 12px;
+    }
+
+    #h-requirements{
+    width: 75%;
+    }
+}
